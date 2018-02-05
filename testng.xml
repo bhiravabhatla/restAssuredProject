@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="RestAPI Testing">
+    <test name="testing get method">
+        <parameter name="baseUrl" value="https://maps.googleapis.com"></parameter>
+        <parameter name="basePath" value="/maps/api"></parameter>
+        <classes>
+            <class name="base.GetRequest"></class>
+            
+        </classes>
+    </test>
+</suite>
