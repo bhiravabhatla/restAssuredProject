@@ -2,11 +2,27 @@
 <suite name="RestAPI Testing">
     <parameter name="baseUrl" value="https://maps.googleapis.com"></parameter>
     <parameter name="basePath" value="/maps/api"></parameter>
-    <test name="testing get method">
+    <parameter name="key" value="AIzaSyCYg1aYNO2luteOywcpgMy-f0Qb6hsD5b0"></parameter>
+    <parameter name="consumerKey" value="0kckSVMFswWanOraRD8k8AIdr"></parameter>
+    <parameter name="consumerSecret" value="QYxW0D40UpS6erPklVsWiIqOQckgaHcq0PvQKyqhSwW6u9BZxm"></parameter>
+    <parameter name="AccessToken" value="209209041-aJYvC6jxPMmRRAPiqFwxNmQT9SeC0Py8K5Cz63b8"></parameter>
+    <parameter name="AccessSecret" value="NZy3dulTWjFmYu5VxEJDgPwhQJNwfi51TOsKp6lV1dp85"></parameter>
+    <!--<test name="testing Google APIs">-->
+
+
+        <!--<classes>-->
+            <!--&lt;!&ndash;<class name="tests.GetRequest"></class>&ndash;&gt;-->
+            <!--<class name="googletests.PostRequest"></class>-->
+
+        <!--</classes>-->
+    <!--</test>-->
+    <test name="testing Twitter APIs">
+
 
         <classes>
-            <class name="base.GetRequest"></class>
-            
+            <!--<class name="tests.GetRequest"></class>-->
+            <class name="twittertests.GetRequest"></class>
+
         </classes>
     </test>
 </suite>

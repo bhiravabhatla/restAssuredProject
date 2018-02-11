@@ -1,22 +1,25 @@
-package base;
+package googletests;
 
+import base.GoogleSetup;
 import io.restassured.response.Response;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
 
-public class GetRequest {
+public class GetRequest extends GoogleSetup {
 
 
     @Test
-    public void getDistance(){
+    @Parameters("key")
+    public void getDistance(String key){
 
         Response response=given()
                 .param("units","metric")
                 .param("origins","Washington,DC")
                 .param("destinations","New+York+City,NY")
-                .param("key","AIzaSyCYg1aYNO2luteOywcpgMy-f0Qb6hsD5b0")
+                .param("key",key)
                 .when()
                 .get("/distancematrix/json");
 
@@ -26,12 +29,13 @@ public class GetRequest {
     }
 
     @Test
-    public void validateAttribute(){
+    @Parameters("key")
+    public void validateAttribute(String key){
         given()
                 .param("units","metric")
                 .param("origins","Washington,DC")
                 .param("destinations","New+York+City,NY")
-                .param("key","AIzaSyCYg1aYNO2luteOywcpgMy-f0Qb6hsD5b0")
+                .param("key",key)
                 .when()
                 .get("/distancematrix/json")
                 .then()
