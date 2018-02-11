@@ -1,33 +1,42 @@
 package base;
 
-import io.restassured.RestAssured;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Parameters;
+import io.restassured.response.Response;
 import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;
+import static org.hamcrest.Matchers.equalTo;
 
 public class GetRequest {
 
-    @BeforeMethod
-    @Parameters({"baseUrl","basePath"})
-    public void setup(String baseUrl, String basePath){
-        RestAssured.baseURI=baseUrl;
-        RestAssured.basePath=basePath;
-
-    }
 
     @Test
     public void getDistance(){
 
-        given()
-                .param("units","imperial")
+        Response response=given()
+                .param("units","metric")
                 .param("origins","Washington,DC")
                 .param("destinations","New+York+City,NY")
                 .param("key","AIzaSyCYg1aYNO2luteOywcpgMy-f0Qb6hsD5b0")
-         .when()
+                .when()
+                .get("/distancematrix/json");
+
+        System.out.println(response.getBody().prettyPrint());
+
+
+    }
+
+    @Test
+    public void validateAttribute(){
+        given()
+                .param("units","metric")
+                .param("origins","Washington,DC")
+                .param("destinations","New+York+City,NY")
+                .param("key","AIzaSyCYg1aYNO2luteOywcpgMy-f0Qb6hsD5b0")
+                .when()
                 .get("/distancematrix/json")
-         .then()
-                .statusCode(200);
+                .then()
+                .body("rows[0].elements[0].distance.text", equalTo("362 km"));
+
+
     }
 }
