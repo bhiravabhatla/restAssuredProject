@@ -22,6 +22,8 @@
         <classes>
             <!--<class name="tests.GetRequest"></class>-->
             <class name="twittertests.GetRequest"></class>
+            <class name="twittertests.PostRequest"></class>
+
 
         </classes>
     </test>

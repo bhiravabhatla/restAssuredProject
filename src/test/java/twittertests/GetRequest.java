@@ -29,7 +29,7 @@ public class GetRequest extends TwitterSetup {
         }
 
 
-        System.out.println(response.then().body("id_str[0]", equalTo("962613540703088645")).extract().path("text[0]"));
+        System.out.println(response.then().body("id_str[0]", equalTo("962899345195413505")).extract().path("text[0]"));
         String responseString= response.asString();
         List<String> tweets = from(responseString).get("text");
 
