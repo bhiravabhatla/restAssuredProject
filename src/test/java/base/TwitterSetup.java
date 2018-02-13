@@ -4,6 +4,8 @@ import io.restassured.RestAssured;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Parameters;
 
+import static io.restassured.RestAssured.oauth;
+
 public class TwitterSetup {
 
    @BeforeSuite
@@ -12,7 +14,7 @@ public class TwitterSetup {
 
         RestAssured.baseURI="https://api.twitter.com/1.1";
         RestAssured.basePath="/statuses";
-        RestAssured.authentication= RestAssured.oauth(consumerKey,  consumerSecret,  AccessToken,  AccessSecret);
+        RestAssured.authentication= oauth(consumerKey,  consumerSecret,  AccessToken,  AccessSecret);
     }
 
 

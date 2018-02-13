@@ -9,12 +9,11 @@ import java.util.List;
 
 import static io.restassured.RestAssured.given;
 import static io.restassured.path.json.JsonPath.from;
-import static org.hamcrest.Matchers.equalTo;
 
 public class GetRequest extends TwitterSetup {
 
 
-    @Test
+    @Test(enabled = false)
     public void getMyTweets() {
 
         Response response = given().
@@ -29,7 +28,7 @@ public class GetRequest extends TwitterSetup {
         }
 
 
-        System.out.println(response.then().body("id_str[0]", equalTo("962899345195413505")).extract().path("text[0]"));
+     //   System.out.println(response.then().body("id_str[0]", equalTo("962899345195413505")).extract().path("text[0]"));
         String responseString= response.asString();
         List<String> tweets = from(responseString).get("text");
 
@@ -41,6 +40,9 @@ public class GetRequest extends TwitterSetup {
 
 
     }
+
+
+
 
 
 }

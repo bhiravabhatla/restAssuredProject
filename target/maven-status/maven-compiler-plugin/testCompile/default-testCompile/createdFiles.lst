@@ -1,0 +1,8 @@
+googletests/GetRequest.class
+twittertests/GetRequest.class
+googletests/PostRequest.class
+models/PlaceAddModel.class
+twittertests/PostRequest.class
+base/TwitterSetup.class
+googletests/PostRequest$1.class
+base/GoogleSetup.class

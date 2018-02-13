@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-RestAPI_Testing">
+              <span class="suite-name border-passed">RestAPI Testing</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-RestAPI_Testing">
+                    <span>testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-RestAPI_Testing">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-RestAPI_Testing">
+                    <span>1 group</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-RestAPI_Testing">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-RestAPI_Testing">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-RestAPI_Testing">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-RestAPI_Testing">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">2 methods,   2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-RestAPI_Testing" class="hide-methods passed suite-RestAPI_Testing"> (hide)</a> <!-- hide-methods passed suite-RestAPI_Testing -->
+                      <a href="#" panel-name="suite-RestAPI_Testing" class="show-methods passed suite-RestAPI_Testing"> (show)</a> <!-- show-methods passed suite-RestAPI_Testing -->
+                    </span>
+                    <div class="method-list-content passed suite-RestAPI_Testing">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RestAPI_Testing" title="twittertests.PostRequest" hash-for-method="postTweet">postTweet</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RestAPI_Testing" title="twittertests.PostRequest" hash-for-method="readTweet">readTweet</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-RestAPI_Testing -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-RestAPI_Testing" class="panel RestAPI_Testing">
+          <div class="suite-RestAPI_Testing-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">twittertests.PostRequest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="postTweet">
+                  </a> <!-- postTweet -->
+                  <span class="method-name">postTweet</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="readTweet">
+                  </a> <!-- readTweet -->
+                  <span class="method-name">readTweet</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-RestAPI_Testing-class-passed -->
+        </div> <!-- panel RestAPI_Testing -->
+        <div panel-name="test-xml-RestAPI_Testing" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/bsantosh/IdeaProjects/untitledSant/RestAssuredPractice/testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;-1&quot; guice-stage=&quot;DEVELOPMENT&quot; name=&quot;RestAPI Testing&quot;&gt;
+  &lt;parameter name=&quot;consumerSecret&quot; value=&quot;QYxW0D40UpS6erPklVsWiIqOQckgaHcq0PvQKyqhSwW6u9BZxm&quot;/&gt;
+  &lt;parameter name=&quot;baseUrl&quot; value=&quot;https://maps.googleapis.com&quot;/&gt;
+  &lt;parameter name=&quot;AccessSecret&quot; value=&quot;NZy3dulTWjFmYu5VxEJDgPwhQJNwfi51TOsKp6lV1dp85&quot;/&gt;
+  &lt;parameter name=&quot;basePath&quot; value=&quot;/maps/api&quot;/&gt;
+  &lt;parameter name=&quot;AccessToken&quot; value=&quot;209209041-aJYvC6jxPMmRRAPiqFwxNmQT9SeC0Py8K5Cz63b8&quot;/&gt;
+  &lt;parameter name=&quot;consumerKey&quot; value=&quot;0kckSVMFswWanOraRD8k8AIdr&quot;/&gt;
+  &lt;parameter name=&quot;key&quot; value=&quot;AIzaSyCYg1aYNO2luteOywcpgMy-f0Qb6hsD5b0&quot;/&gt;
+  &lt;test name=&quot;testing Twitter APIs&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;twittertests.GetRequest&quot;/&gt;
+      &lt;class name=&quot;twittertests.PostRequest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- testing Twitter APIs --&gt;
+&lt;/suite&gt; &lt;!-- RestAPI Testing --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-RestAPI_Testing" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for RestAPI Testing</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">testing Twitter APIs (2 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-RestAPI_Testing" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for RestAPI Testing</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">mytweets</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">postTweet</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-RestAPI_Testing" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for RestAPI Testing</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_RestAPI_Testing');
+function tableData_RestAPI_Testing() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(2);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'postTweet')
+data.setCell(0, 2, 'twittertests.PostRequest')
+data.setCell(0, 3, 1666);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'readTweet')
+data.setCell(1, 2, 'twittertests.PostRequest')
+data.setCell(1, 3, 535);
+window.suiteTableData['RestAPI_Testing']= { tableData: data, tableDiv: 'times-div-RestAPI_Testing'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 2 seconds</span>
+              <div id="times-div-RestAPI_Testing">
+              </div> <!-- times-div-RestAPI_Testing -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-RestAPI_Testing" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for RestAPI Testing</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-RestAPI_Testing" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">2 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">twittertests.PostRequest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setup</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">twittertests.GetRequest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">getMyTweets</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-RestAPI_Testing" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">twittertests.GetRequest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">setup(0kckSVMFswWanOraRD8k8AIdr, QYxW0D40UpS6erPklVsWiIqOQckgaHcq0PvQKyqhSwW6u9BZxm, 209209041-aJYvC6jxPMm...)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">twittertests.PostRequest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">postTweet</span>
+                <span class="method-start">311 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">readTweet</span>
+                <span class="method-start">1979 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
